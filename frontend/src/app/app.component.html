@@ -1,0 +1,36 @@
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+</head>
+
+
+<div class="container">
+  <div class="message-list">
+    <ng-container *ngFor="let entry of messages">
+      <p [class]="'from-' + (entry.nickname === nickname ? 'me' : 'them')">
+        <span>{{ entry.nickname }}</span><br>
+        {{ entry.message }}<br>
+        <small>
+          {{ entry.datetime || (entry.sentAt | date: 'dd.MM.yy HH:mm') }}
+        </small>
+      </p>
+    </ng-container>
+
+    <div class="input-wrapper">
+      
+
+      <input
+        type="text"
+        [(ngModel)]="message"
+        (keyup.enter)="sendMessage()"
+        placeholder="Type a message"
+      />
+      <button 
+        (click)="sendMessage()" 
+        [disabled]="!message.trim()"
+        title="Send"
+      >
+        <span class="send-icon">&#9993;</span>
+      </button>
+    </div>
+  </div>
+</div>

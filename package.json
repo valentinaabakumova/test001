@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "@angular-builders/custom-webpack": "^19.0.1",
+    "@types/cors": "^2.8.17",
+    "@types/crypto-js": "^4.2.2",
+    "@types/jasmine": "^5.1.7",
+    "@types/node": "^22.14.1",
+    "ngx-build-plus": "^19.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@angular/core": "^19.2.7",
+    "cors": "^2.8.5",
+    "crypto-browserify": "^3.12.1",
+    "crypto-js": "^4.2.0",
+    "express": "^5.1.0"
+  }
+}

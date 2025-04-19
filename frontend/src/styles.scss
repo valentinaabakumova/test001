@@ -1,0 +1,54 @@
+// /* You can add global styles to this file, and also import other style files */
+
+body {
+  font-family: "Roboto", "Segoe UI", -apple-system, BlinkMacSystemFont,
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+.input-wrapper input {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.input-wrapper button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 0.4rem;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.input-wrapper button:hover {
+  background-color: #0056b3;
+}
+
+.input-wrapper button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.material-icons {
+  font-size: 20px;
+}
